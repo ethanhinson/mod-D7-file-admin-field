@@ -1,0 +1,5 @@
+name = File Admin Field
+description = Example of how to upload files on an admin page.
+core = 7.x
+version = 7.x-1.0-dev
+project = file_admin_field

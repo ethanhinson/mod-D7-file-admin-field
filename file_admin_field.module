@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * Example of creating a file admin field
+ */
+
+/**
+ * Implements hook_menu
+ */
+
+function file_admin_field_menu() {
+  $items = array();
+  $items['admin/content/file-upload'] = array(
+    'title' => 'File Upload',
+    'description' => t('Upload a file.'),
+    'page callback' => 'drupal_get_form',
+    'access arguments' => TRUE,
+    'page arguments' => array('file_admin_field_admin_form'),
+    'file' => 'file_admin_field.admin.inc',
+  );
+  return $items;
+}
